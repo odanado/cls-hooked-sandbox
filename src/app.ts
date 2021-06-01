@@ -1,5 +1,13 @@
+import express from "express";
+
+const app = express();
+
+app.get("/", (_, res) => {
+  res.send("poyo");
+});
+
 async function main(): Promise<void> {
-  console.log("poyo");
+  app.listen(3000);
 }
 
 main();
